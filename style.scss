@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;800&display=swap');
+
+$bck-color:#3c181c;
+$txt-color:#b9405b;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    user-select: none;
+}
+
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $bck-color;
+    transition: background-color 2s ease;
+}
+
+
+
+.main-div{
+    padding: 5%;
+    display: flex;
+    align-items: center;
+
+    .arrow{
+        font-size: 4rem;
+        margin: 0 3rem;
+        cursor:pointer;
+    }
+}
+
+.playlist-div{
+    width: 400px;
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px 6px $txt-color;
+    transition: box-shadow 2s ease;
+
+    .song-name-div{
+        width: 100%;
+        display: flex;
+
+        img{
+            width: 60px;
+            height: 60px;
+        }
+
+        .name-div{
+            margin: 10px;
+
+            h2{
+                font-size: 16px;  
+            }
+            
+        }
+    }
+}
+
+.lyrics-div{
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.watermark{
+    margin-top: 20px;
+    display: flex;
+    font-weight: 800;
+
+    p{
+        margin-left: 10px;
+    }
+}
+
+.txt{
+    color: $txt-color;
+    transition: color 2s ease;
+}
+

@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #3c181c;
+  -webkit-transition: background-color 2s ease;
+  transition: background-color 2s ease;
+}
+
+.main-div {
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main-div .arrow {
+  font-size: 4rem;
+  margin: 0 3rem;
+  cursor: pointer;
+}
+
+.playlist-div {
+  width: 400px;
+  padding: 5%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 16px 6px #b9405b;
+          box-shadow: 0px 0px 16px 6px #b9405b;
+  -webkit-transition: -webkit-box-shadow 2s ease;
+  transition: -webkit-box-shadow 2s ease;
+  transition: box-shadow 2s ease;
+  transition: box-shadow 2s ease, -webkit-box-shadow 2s ease;
+}
+.playlist-div .song-name-div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.playlist-div .song-name-div img {
+  width: 60px;
+  height: 60px;
+}
+.playlist-div .song-name-div .name-div {
+  margin: 10px;
+}
+.playlist-div .song-name-div .name-div h2 {
+  font-size: 16px;
+}
+
+.lyrics-div {
+  font-weight: 800;
+  margin-top: 20px;
+}
+
+.watermark {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 800;
+}
+.watermark p {
+  margin-left: 10px;
+}
+
+.txt {
+  color: #b9405b;
+  -webkit-transition: color 2s ease;
+  transition: color 2s ease;
+}
