@@ -8,6 +8,7 @@ const rightArrow = document.querySelector('#rightArrow');
 const txtEl = document.querySelectorAll('.txt');
 const audio = document.querySelector('audio');
 
+
 let counter = 0;
 
 const songs = [
@@ -162,7 +163,6 @@ rightArrow.addEventListener('click',() => {
     setSong();
     playSong();
     colorChange();
-    c(counter)
 });
 
 leftArrow.addEventListener('click',() => {
@@ -175,8 +175,19 @@ leftArrow.addEventListener('click',() => {
     colorChange();
 });
 
+audio.addEventListener("ended", function(){
+    counter++;
+    if(counter === songs.length){
+        counter = 0;
+    }
+    setSong();
+    playSong();
+    colorChange();
+});
+
+
+
 const setSong = () => {
-    c(counter)
     img.setAttribute('src',`${songs[counter].img}`);
     name.innerText = `${songs[counter].name}`;
     artist.innerText = `${songs[counter].artist}`;
@@ -195,4 +206,4 @@ const colorChange = () => {
     });
     document.querySelector('body').style.background = `${colors[counter].bck}`;
     document.querySelector('.playlist-div').style.boxShadow = `0px 0px 16px 6px ${colors[counter].txt}`;
-}
+};

@@ -89,6 +89,13 @@ body {
 .watermark p {
   margin-left: 10px;
 }
+.watermark .commands {
+  margin-right: 20px;
+  font-size: 1.8rem;
+}
+.watermark .commands i {
+  cursor: pointer;
+}
 
 .txt {
   color: #b9405b;
